@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10vh;
+    background-color: rgba(0, 0, 139, 0.77);
+    color: beige;
+    padding: 10px;
+}
+
+header h2 {
+    padding: 10PX;
+    display: inline-block;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    float: right;
+}
+
+header button {
+    height: 30px;
+    width: 70px;
+    background-color: beige;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header button:hover {
+    background-color: rgba(0, 0, 0, 0.737);
+    color: beige;
+}
+
+a:hover {
+    color: beige;
+}
+
+main .box {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    width: 500px;
+    height: 370px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+}
+
+main h2 {
+    padding: 10px;
+}
+
+main h3 {
+    padding: 10px;
+    margin: 10px;
+}
+
+main button {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 5px;
+    border: none;
+    background-color: rgba(220, 220, 220, 0.719);
+
+}
+
+#next {
+    margin-top: 20px;
+    border: none;
+    float: right;
+    width: 70px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+#next:hover {
+    background-color: rgba(16, 18, 142, 0.703);
+    transition: all 0.3s;
+}
+
+main button:hover {
+    background-color: skyblue;
+
+}
+
+/* carousel */
+.carousel-container {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 1px;
+    width: 10px;
+}
+
+.next {
+    right: 1px;
+    width: 10px;
+}

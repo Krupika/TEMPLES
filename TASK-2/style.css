@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    height: 6vh;
+    background-color: rgb(32, 30, 29);
+    background-color: orangered;
+    display: flex;
+    margin-bottom: 40px;
+    padding: 7px;
+    font-size: 17px;
+}
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    padding: 40px;
+    transition: 1s;
+}
+
+a:hover {
+    color: black;
+}
+
+body {
+    background-color: rgba(5, 5, 5, 0.678);
+}
+
+.login {
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    margin-top: 90px;
+    color: white;
+    background-image: url("bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px orangered;
+}
+
+.div {
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+}
+
+input:hover {
+    background-color: rgba(255, 68, 0, 0.353);
+}
+
+label {
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.h1 {
+    background-color: rgba(5, 5, 5, 0.678);
+    border-radius: 50px;
+    width: 400px;
+    height: 70px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: wheat;
+    margin: auto;
+    position: relative;
+    top: 15px;
+
+}
+
+span {
+    color: orangered;
+}
+
+button {
+    width: 400px;
+    height: 30PX;
+    background-color: rgba(250, 235, 215, 0.819);
+    color: orangered;
+    border: none;
+    margin-top: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.signup {
+    text-align: center;
+}
+
+.signup a {
+    color: orangered;
+}

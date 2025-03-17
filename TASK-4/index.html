@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* General Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: #121212; color: #E0E0E0; line-height: 1.6; }
+        #about{width: 700px; margin: auto;}
+        #about ul{list-style-type: none; text-align: left;margin-top: 20px;}
+        #about h3{text-align: left; padding-top: 30px; color: #00c6ff;}
+
+        .projects{display: block;}
+        .projects a{color: aquamarine; text-decoration: none; display: block;}
+        .projects a:hover{color: #0056b3;}
+
+        /* Header & Navigation */
+        header { background: #1E1E1E; color: white; padding: 15px; text-align: center; position: sticky; top: 0; width: 100%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        nav { display: flex; justify-content: center; gap: 20px; }
+        nav a { color: #E0E0E0; text-decoration: none; font-weight: bold; padding: 10px 15px; transition: 0.3s; border-radius: 5px; }
+        nav a:hover { background: #007BFF; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(to right, #007BFF, #0056b3); color: white; padding: 120px 20px; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.4rem; }
+
+        /* Sections */
+        section { padding: 70px 20px; text-align: center; }
+        h2 { font-size: 2.2rem; margin-bottom: 20px; color: #00c6ff; }
+
+        /* Projects */
+        .projects { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+        .projects div { width: 300px; padding: 20px; background: #1E1E1E; box-shadow: 0 4px 10px rgba(0,0,0,0.5); border-radius: 10px; transition: 0.3s ease-in-out; }
+        .projects div:hover { transform: translateY(-5px); background: #2E2E2E; }
+        .projects h3 { color: #00c6ff; }
+
+        /* Contact Form */
+        .contact-form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 12px; border: 1px solid #444; background: #1E1E1E; color: #E0E0E0; border-radius: 5px; font-size: 1rem; }
+        .contact-form button { padding: 12px 20px; background: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; transition: 0.3s ease-in-out; }
+        .contact-form button:hover { background: #0056b3; }
+
+        /* Footer */
+        footer { text-align: center; padding: 20px; background: #1E1E1E; color: #E0E0E0; font-size: 0.9rem; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .projects { flex-direction: column; align-items: center; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Showcasing my skills and projects.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Krupika, a passionate Web Developer with a love for creating engaging and user-friendly web applications. I specialize in front-end development and have experience in HTML, CSS, JavaScript. My goal is to build innovative digital solutions that solve real-world problems.I'm always eager to learn and expand my skillset!</p>
+        <h3>Skills:</h3>
+        <ul>
+            <li>Frontend Development (HTML, CSS, JavaScript)</li>
+            <li>Responsive Design </li>
+            <li>Building Dynamic Web Applications</li>
+        </ul>
+    </section>
+       
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div><h3>Interactive Quiz App</h3><p>A dynamic quiz application with real-time score tracking and multiple-choice questions.</p>
+        <a href="https://github.com/Krupika/APEX_PLANET_TASK-3.git">View Project</a>
+        </div>
+        <!-- <div><h3>Weather Dashboard</h3><p>A real-time weather app that fetches API data to display weather forecasts with location-based results.</p></div> -->
+        <div><h3>Portfolio Website</h3><p>A personal portfolio showcasing my skills, projects, and contact information with a sleek dark theme.</p>
+            <a href="https://github.com/Krupika/APEX_PLANET_TASK-4.git">View Project</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; made with ♥️ by Krupika</p>
+    </footer>
+    
+    <script>
+        // Smooth Scrolling
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Basic Form Validation
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                alert('Message Sent Successfully!');
+                this.reset();
+            } else {
+                alert('Please fill all fields!');
+            }
+        });
+    </script>
+</body>
+</html>
