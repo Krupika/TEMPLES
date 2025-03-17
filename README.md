@@ -29,6 +29,6 @@ This project is a web-based platform that provides information about various tem
 
 ## Contact
 For any queries or contributions, feel free to contact:
-- **Your Name**: Krupika
-- Email:krupikaheerekar@gmail.com
-- GitHub: https://github.com/Krupika
+- **Name**: **Krupika**
+- **Email**:krupikaheerekar@gmail.com
+- **GitHub**: https://github.com/Krupika
