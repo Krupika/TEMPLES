@@ -1,0 +1,49 @@
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  color: ghostwhite;
+  font-size: 1.5rem;
+}
+
+
+body {
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-color: darkkhaki;
+  color: whitesmoke;
+
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  padding: 30px;
+
+}
+
+footer {
+  text-align: center;
+  font-size: large;
+  box-shadow: 10px 10px 35px silver;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 10px;
+  padding: 15px;
+}
+
+a:hover {
+  color: coral;
+}
